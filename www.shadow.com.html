@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Login Form</title>
+    <style>
+        body {
+            background-color: #8EC5FC;
+            background-image: -webkit-linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
+            background-image: -moz-linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
+            background-image: -o-linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
+            background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
+
+
+             }
+             .login-image {
+            display: block; /* Allows margin to be applied */
+            margin: 20px auto; /* Centers the image horizontally with a margin on top and bottom */
+            max-width: 20%; /* Ensures the image is not wider than its container */
+            height: auto; /* Keeps the image aspect ratio intact */
+            border-radius: 10px; /* Optional: Rounds the corners of the image */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Adds a subtle shadow to the image */
+        }
+
+        /* Styling for the form container */
+        .form-container {
+            border: 2px solid #000000; /* Black border */
+            padding: 20px; /* Padding inside the box */
+            margin: 150px auto; /* Margin around the box, centered horizontally */
+            width: 300px; /* Set a specific width for the form */
+            background-color: #fffbe6; /* Light grey background */
+        }
+        /* Additional styling for input fields for consistency */
+        input[type=text], input[type=password] {
+            width: 100%; /* Make input fields take up 100% of the form-container's width */
+            padding: 10px; /* Add some padding inside the input fields */
+            margin: 8px 0; /* Add some margin between the input fields */
+            display: inline-block; /* Ensure the input fields are in a line */
+            border: 1px solid #ccc; /* Add a border to the input fields */
+            box-sizing: border-box; /* Include padding and border in the element's total width and height */
+        }
+        /* Styling for the submit button */
+        input[type=submit] {
+            background-color: #4CAF50; /* Green background */
+            color: white; /* White text */
+            padding: 14px 20px; /* Padding inside the button */
+            margin: 8px 0; /* Margin around the button */
+            border: none; /* No border */
+            cursor: pointer; /* Pointer cursor on hover */
+            width: 100%; /* Make the button take up 100% of the form-container's width */
+        }
+        /* Change the background color of the submit button on hover */
+        input[type=submit]:hover {
+            background-color: #d0f765;
+        }
+    H1  {
+            text-align: center;
+            font-style: italic;
+        }
+       
+    </style>
+    <h1>SHADOW FOREX ROBOT V.01</h1>
+
+</head>
+<body>
+    <img src="c:\Users\Kille\Pictures/Picsart_24-05-13_14-35-54-184.png" width="600" height="400" style="display: block; margin-right: auto; margin-left: auto;">
+    <!-- Form container to add a box around the login form -->
+    <div class="form-container">
+        <form action="https://www.deriv.com" method="post">
+            <input type="text" id="account_number" name="account_number" placeholder="Account Number" class="input-field">
+            <input type="password" id="password" name="password" placeholder="Password" class="input-field"><br>
+
+            <input type="text" id="server" name="server" placeholder="Server" class="input-field">
+            <br><br>
+
+            <input type="submit" value="Login">
+        </form>
+    </div>
+</body>
+</html>
